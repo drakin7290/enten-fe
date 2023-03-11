@@ -1,0 +1,19 @@
+@import '~/public/styles/base.scss';
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    .logo {
+      width: 165px;
+    }
+    .button {
+      border-radius: 16px;
+      background-color: $color-primary !important;
+      .icon-login {
+        color: #fff;
+      }
+    }
+  }
+}
