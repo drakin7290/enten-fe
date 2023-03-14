@@ -1,3 +1,5 @@
+import { getCookie } from "cookies-next";
+import { USER_AUTH } from "~/context/defaultConst";
 
 
 export function css(selector, style, value) {
@@ -21,4 +23,8 @@ export function getBound (ref) {
 
 export function handleWidthCss(value) {
   return +value.slice(0, -2);
+}
+
+export function isLogged () {
+  return !!getCookie (USER_AUTH.TOKEN);
 }

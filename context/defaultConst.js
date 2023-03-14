@@ -6,6 +6,7 @@ export const USER_AUTH = {
   NAME: 'auth_user_name',
   AVATAR: 'auth_user_avatar',
   USERNAME: 'auth_user_username',
+  TIME_EXPIRED: 'auth_user_time_expired',
 };
 // export const IS_DARK_MODE_KEY = 'is_dark_mode_key';
 // export const MOBILE_WIDTH = 1024;

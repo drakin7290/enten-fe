@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { MOBILE_WIDTH } from '~/context/defaultConst';
 import useResize from '~/hooks/useResize';
+import { Spinner } from '~/public/assets/svgs';
 import styles from './styles.module.scss';
 export default function Button({
   className = '',
@@ -17,6 +18,7 @@ export default function Button({
   disabled,
   outline = false,
   iconBehind = undefined,
+  loading = false,
   ...props
 }) {
   let upperCaseClass = '';
@@ -54,7 +56,16 @@ export default function Button({
       {...props}
     >
       {children}
-      {iconBehind}
+      {!loading && iconBehind}
+      {loading && (
+        <Spinner
+          width="30px"
+          height="30px"
+          style={{
+            color: '#fff',
+          }}
+        />
+      )}
     </button>
   );
 }
