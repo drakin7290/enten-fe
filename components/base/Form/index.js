@@ -75,6 +75,7 @@ export default function Form({
     function resize(e) {
       setWidthDevice(window.innerWidth);
     }
+    resize();
     window.addEventListener('resize', resize);
     return () => {
       window.removeEventListener('resize', resize);

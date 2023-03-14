@@ -10,7 +10,14 @@ import icon from '~/public/favicon.ico';
 import ScrollToTop from '~/components/common/ScrollToTop';
 import { nameWeb } from '~/core/contants';
 
-export default function MainLayout({ children, title = '', currentPage = '', data = null, meta_data = null }) {
+export default function MainLayout({
+  children,
+  title = '',
+  currentPage = '',
+  data = null,
+  meta_data = null,
+  hideHeaderFooter = false,
+}) {
   const titlePage = !!title ? `${nameWeb} - ` + title : nameWeb;
 
   return (
@@ -64,12 +71,12 @@ export default function MainLayout({ children, title = '', currentPage = '', dat
       </Head>
 
       <div className={`${styles['body']}`}>
-        <Header currentPage={currentPage} />
+        {hideHeaderFooter || <Header currentPage={currentPage} />}
         <div className={`${styles['section']}`}>
           {children}
           {/* {cloneElement(children, { isDarkmode: isDarkmode })} */}
         </div>
-        <Footer />
+        {hideHeaderFooter || <Footer />}
         {/* <ScrollToTop /> */}
       </div>
     </>

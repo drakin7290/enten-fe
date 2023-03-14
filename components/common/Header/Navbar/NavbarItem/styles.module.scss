@@ -7,6 +7,9 @@
       width: 100%;
     }
   }
+  &.active {
+    color: $color-primary;
+  }
   &::before {
     content: '';
     position: absolute;

@@ -8,7 +8,7 @@
   row-gap: 32px;
   align-items: center;
   .title {
-    font-family: 'SpaceGrotesk';
+    // font-family: 'SpaceGrotesk';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -16,7 +16,7 @@
     /* identical to box height */
 
     letter-spacing: 0.02em;
-    color: $color-neutral-black;
+    color: $color-black;
   }
   .input {
     width: 100%;
