@@ -1,4 +1,4 @@
-export const CURRENT_LANG_KEY = 'current_lang';
+export const CURRENT_LANG_KEY = 'current_lang_enten';
 export const USER_AUTH = {
   TOKEN: 'auth_user_token',
   EMAIL: 'auth_user_email',

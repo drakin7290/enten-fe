@@ -12,7 +12,6 @@ export default function Button({
   styleMobile = {},
   upperCase = true,
   center = false,
-  to = '',
   backgroundColor = '',
   responsive = true,
   disabled,
@@ -56,11 +55,6 @@ export default function Button({
     >
       {children}
       {iconBehind}
-      {to != '' && (
-        <Link href={to}>
-          <a className={styles['link-href']}></a>
-        </Link>
-      )}
     </button>
   );
 }

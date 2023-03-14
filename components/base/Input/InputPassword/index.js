@@ -17,7 +17,7 @@ export default function InputPassword({ type, register, ...props }) {
         {show ? (
           <EyeClose
             style={{
-              color: '#A2A2A2',
+              color: '#333',
             }}
             width="24px"
             height="24px"
@@ -25,7 +25,7 @@ export default function InputPassword({ type, register, ...props }) {
         ) : (
           <EyeOpen
             style={{
-              color: '#A2A2A2',
+              color: '#333',
             }}
             width="24px"
             height="24px"
