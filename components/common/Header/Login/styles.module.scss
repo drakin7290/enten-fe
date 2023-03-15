@@ -1,0 +1,44 @@
+.button {
+  border-radius: 16px;
+  background-color: $color-primary !important;
+  .icon-login {
+    color: #fff;
+  }
+}
+.logged {
+  position: relative;
+  z-index: 10;
+  &:hover {
+    .popup {
+      transform: scale(1);
+    }
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+    border: 2px solid $color-primary;
+    cursor: pointer;
+  }
+  .popup {
+    $space: 6px;
+    position: absolute;
+    top: calc(100% + 6px);
+    border-radius: 10px;
+    width: max-content;
+    background-color: #fff;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: 0.2s;
+    box-shadow: 0 0 12px #dfdfdf;
+    padding: 6px 0;
+    &::before {
+      content: '';
+      position: absolute;
+      height: $space;
+      top: calc($space * -1);
+      width: 100%;
+    }
+  }
+}

@@ -16,6 +16,7 @@ export default function Form({
   onSubmit = () => {},
   hookForm = {},
   submitText,
+  loadingSubmit,
 }) {
   const { register, handleSubmit, reset, watch, formState } = hookForm;
   const transText = useTrans();
@@ -108,7 +109,7 @@ export default function Form({
           </div>
         );
       })}
-      <Button type="submit" className={styles['submit']} disabled={disabledSubmit}>
+      <Button type="submit" className={styles['submit']} disabled={disabledSubmit} loading={loadingSubmit}>
         {submitText || 'Submit'}
       </Button>
     </form>
