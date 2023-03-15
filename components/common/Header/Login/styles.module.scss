@@ -19,6 +19,8 @@
     border-radius: 100rem;
     border: 2px solid $color-primary;
     cursor: pointer;
+    object-fit: cover;
+    object-position: center;
   }
   .popup {
     $space: 6px;
