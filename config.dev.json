@@ -1,5 +1,5 @@
 {
   "PRODUCTION_VERSION": "Ver Dev",
-  "SERVER_URI": "http://enten.tranvietdoan.com/api/v1",
+  "SERVER_URI": "https://enten.tranvietdoan.com/api/v1",
   "WEB_URI": "https://dev.catonchain.com"
 }
