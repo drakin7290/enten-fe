@@ -24,7 +24,7 @@ export default function LoginContainer() {
     setLoadingLogin(true);
     login(
       {
-        email: data?.username,
+        email: data?.email,
         password: data?.password,
       },
       {
@@ -64,10 +64,13 @@ export default function LoginContainer() {
                 {
                   list: [
                     {
-                      label: 'Username',
-                      name: 'username',
-                      type: 'text',
+                      label: 'Email',
+                      name: 'email',
+                      type: 'mail',
                       required: true,
+                      validates: {
+                        isEmail: true,
+                      },
                     },
                   ],
                 },
